@@ -1,11 +1,11 @@
 ﻿namespace GoogleHomeUML
 {
-    public class GoogleHome
+    public class GoogleHome //huvudklass 
     {
         private int Password;
         public string Status = "Lyssnar";
 
-        public void HejGoogle()
+        public void HejGoogle() //metod
         {
             Console.WriteLine($"hej jag {Status}");
         }
