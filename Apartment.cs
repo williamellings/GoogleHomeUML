@@ -1,13 +1,22 @@
-﻿namespace GoogleHomeUML
+﻿using System.Collections.Generic;
+
+namespace GoogleHomeUML
 {
-    public class Apartment : GoogleHome //klass apart ärver av 
+    public class Lampor //klass apart ärver av 
     {
-        public string Location = "Vardagsrum";
+        public string Location { get; set; }
+        public int LjusStyrka { get; set; }
+        public string LampNamn { get; set; }
+
+        public string CamName { get; set; }
+
+        public List<string> locationList = new List<string>() { "Vardagsrum", "Hall", "Kitchen", "Toilet", "Tv-rum"};
+        public List<Lampor> lamporList = new List<Lampor>();
 
 
-        public virtual void LightRoom() //metod
-        {
-            Console.WriteLine("Ljust i rummet");
-        }
+        
+
+
+        
     }
 }
